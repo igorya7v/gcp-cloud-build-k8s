@@ -8,17 +8,16 @@ steps:
   - '--tag=gcr.io/$PROJECT_ID/$_APP_NAME:$COMMIT_SHA'
   - '--tag=gcr.io/$PROJECT_ID/$_APP_NAME:$BUILD_ID'
   - '.'
-  id: 'build-image-spring-boot-app'
 
-# - name: 'gcr.io/cloud-builders/kubectl'
-#   args:
-#   - 'set'
-#   - 'image'
-#   - 'deployment/${DEPLOYMENT_NAME}'
-#   - '${CONTAINER_NAME}=gcr.io/${$PROJECT_ID}/${CONTAINER_NAME}:${$COMMIT_SHA}'
-#   env:
-#   - 'CLOUDSDK_COMPUTE_ZONE=${ZONE}'
-#   - 'CLOUDSDK_CONTAINER_CLUSTER=${GKE_CLUSTER}'
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+  - 'set'
+  - 'image'
+  - 'deployment/${_DEPLOYMENT_NAME}'
+  - '${_CONTAINER_NAME}=gcr.io/${$PROJECT_ID}/${_CONTAINER_NAME}:${$COMMIT_SHA}'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
 
 substitutions:
   _APP_NAME: simple-spring-boot-app
