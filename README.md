@@ -8,7 +8,7 @@
 
 ### Application Structure
 - Application Source Code: [src](https://github.com/igorya7v/gcp-cloud-build-k8s/tree/main/src "src") folder
-- Docker file: [Dockerfile](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/Dockerfile "Dockerfile")
+- Docker file (build an image for lean container in prod): [Dockerfile](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/Dockerfile "Dockerfile")
 - CloudBuild Pipeline Configuration: [cloudbuild.yaml](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/cloudbuild.yaml "cloudbuild.yaml")
 
 
