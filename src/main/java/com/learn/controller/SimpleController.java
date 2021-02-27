@@ -8,6 +8,6 @@ public class SimpleController {
 
 	@GetMapping("/message")
 	public String getMessage() {
-		return "Simple Spring Boot Demo...";
+		return "Simple Spring Boot Demo... (v2)";
 	}
 }
