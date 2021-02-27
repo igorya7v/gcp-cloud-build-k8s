@@ -17,7 +17,7 @@
 ![Deploy Flow Chart](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/readme-images/deploy-flow-chart.svg)
   
   
-# Goole Cloud Kuberneted Cluster Setup (Standard/Single-Zone)
+# Goole Cloud Kubernetes Cluster Setup (Standard/Single-Zone)
 
 ##### Ensure that you have enabled the Google Kubernetes Engine API.
 ```
