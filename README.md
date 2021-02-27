@@ -1,10 +1,10 @@
 ## Google Cloud Build Deploy to Kuberneted (CI/CD Pipelines)
 
 ### App High Level Overview
-Image here
+![Kubernetes Deployment with Google Build](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/readme-images/Cloud%20Build%20Deployment%20With%20Kubernetes.svg)
 
 ### CI/CD Overview
-Image here
+![CI/CD Overview](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/readme-images/CI-CD%20Overview.svg)
 
 ### Application Structure
 - Application Source Code: [src](https://github.com/igorya7v/gcp-cloud-build-k8s/tree/main/src "src") folder
@@ -12,12 +12,11 @@ Image here
 - CloudBuild Pipeline Configuration: [cloudbuild.yaml](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/cloudbuild.yaml "cloudbuild.yaml")
 
 
-# Deploy Pipeline Flowchart (.github/workflows/aws.yml)
+# Deploy Pipeline Flowchart (cloudbuild.yaml)
 
-
+![Deploy Flow Chart](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/readme-images/deploy-flow-chart.svg)
   
   
-
 # Goole Cloud Kuberneted Cluster Setup (Standard/Single-Zone)
 
 ##### Ensure that you have enabled the Google Kubernetes Engine API.
