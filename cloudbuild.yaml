@@ -4,29 +4,29 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'build'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:latest'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:$COMMIT_SHA'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:$BUILD_ID'
+  - '--tag=gcr.io/$PROJECT_ID/simple-spring-boot-app:latest'
+  - '--tag=gcr.io/$PROJECT_ID/simple-spring-boot-app:$COMMIT_SHA'
+  - '--tag=gcr.io/$PROJECT_ID/simple-spring-boot-app:$BUILD_ID'
   - '.'
   id: 'build-image-spring-boot-app'
 
-- name: 'gcr.io/cloud-builders/kubectl'
-  args:
-  - 'set'
-  - 'image'
-  - 'deployment/${DEPLOYMENT_NAME}'
-  - '${CONTAINER_NAME}=gcr.io/${$PROJECT_ID}/${CONTAINER_NAME}:${$COMMIT_SHA}'
-  env:
-  - 'CLOUDSDK_COMPUTE_ZONE=${ZONE}'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=${GKE_CLUSTER}'
+# - name: 'gcr.io/cloud-builders/kubectl'
+#   args:
+#   - 'set'
+#   - 'image'
+#   - 'deployment/${DEPLOYMENT_NAME}'
+#   - '${CONTAINER_NAME}=gcr.io/${$PROJECT_ID}/${CONTAINER_NAME}:${$COMMIT_SHA}'
+#   env:
+#   - 'CLOUDSDK_COMPUTE_ZONE=${ZONE}'
+#   - 'CLOUDSDK_CONTAINER_CLUSTER=${GKE_CLUSTER}'
 
-options:
-  env:
-  - APP_NAME: simple-spring-boot-app
-  - CONTAINER_NAME: simple-spring-boot-container
-  - DEPLOYMENT_NAME: simple-spring-boot-deployment
-  - ZONE: us-central1-a
-  - GKE_CLUSTER: simple-spring-boot-k8s-cluster
+# options:
+#   env:
+#   - APP_NAME: simple-spring-boot-app
+#   - CONTAINER_NAME: simple-spring-boot-container
+#   - DEPLOYMENT_NAME: simple-spring-boot-deployment
+#   - ZONE: us-central1-a
+#   - GKE_CLUSTER: simple-spring-boot-k8s-cluster
 
 images:
 - 'gcr.io/$PROJECT_ID/simple-spring-boot:latest'
