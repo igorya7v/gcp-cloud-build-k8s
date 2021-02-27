@@ -20,13 +20,13 @@ steps:
 #   - 'CLOUDSDK_COMPUTE_ZONE=${ZONE}'
 #   - 'CLOUDSDK_CONTAINER_CLUSTER=${GKE_CLUSTER}'
 
-# options:
-#   env:
-#   - APP_NAME: simple-spring-boot-app
-#   - CONTAINER_NAME: simple-spring-boot-container
-#   - DEPLOYMENT_NAME: simple-spring-boot-deployment
-#   - ZONE: us-central1-a
-#   - GKE_CLUSTER: simple-spring-boot-k8s-cluster
+options:
+  env:
+  - APP_NAME: simple-spring-boot-app
+  - CONTAINER_NAME: simple-spring-boot-container
+  - DEPLOYMENT_NAME: simple-spring-boot-deployment
+  - ZONE: us-central1-a
+  - GKE_CLUSTER: simple-spring-boot-k8s-cluster
 
 images:
 - 'gcr.io/$PROJECT_ID/simple-spring-boot-app:latest'
