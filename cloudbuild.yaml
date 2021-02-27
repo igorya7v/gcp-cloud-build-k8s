@@ -21,10 +21,10 @@ steps:
 
 substitutions:
   _APP_NAME: simple-spring-boot-app
-  _CONTAINER_NAME: simple-spring-boot-app-sha256-1
-  _DEPLOYMENT_NAME: simple-spring-boot-deployment
+  _CONTAINER_NAME: simple-spring-boot-container
+  _DEPLOYMENT_NAME: simple-spring-boot-app
   _ZONE: us-central1-a
-  _GKE_CLUSTER: simple-spring-boot-k8s-cluster
+  _GKE_CLUSTER: simple-spring-boot-cluster
 
 options:
     substitution_option: 'ALLOW_LOOSE'
