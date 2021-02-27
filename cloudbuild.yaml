@@ -25,7 +25,7 @@ substitutions:
   CONTAINER_NAME: simple-spring-boot-container
   DEPLOYMENT_NAME: simple-spring-boot-deployment
   ZONE: us-central1-a
-  GKE_CLUSTER: simple-spring-boot-k8s-cluster
+  GKE: simple-spring-boot-k8s-cluster
 
 options:
     substitution_option: 'ALLOW_LOOSE'
