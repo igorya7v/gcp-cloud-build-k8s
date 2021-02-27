@@ -4,9 +4,9 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'build'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:latest'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:$COMMIT_SHA'
-  - '--tag=gcr.io/$PROJECT_ID/$APP_NAME:$BUILD_ID'
+  - '--tag=gcr.io/$PROJECT_ID/${APP_NAME}:latest'
+  - '--tag=gcr.io/$PROJECT_ID/${APP_NAME}:$COMMIT_SHA'
+  - '--tag=gcr.io/$PROJECT_ID/${APP_NAME}:$BUILD_ID'
   - '.'
   id: 'build-image-spring-boot-app'
 
