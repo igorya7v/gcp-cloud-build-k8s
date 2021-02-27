@@ -29,6 +29,6 @@ steps:
 #   - GKE_CLUSTER: simple-spring-boot-k8s-cluster
 
 images:
-- 'gcr.io/$PROJECT_ID/simple-spring-boot:latest'
-- 'gcr.io/$PROJECT_ID/simple-spring-boot:$COMMIT_SHA'
-- 'gcr.io/$PROJECT_ID/simple-spring-boot:$BUILD_ID'
+- 'gcr.io/$PROJECT_ID/simple-spring-boot-app:latest'
+- 'gcr.io/$PROJECT_ID/simple-spring-boot-app:$COMMIT_SHA'
+- 'gcr.io/$PROJECT_ID/simple-spring-boot-app:$BUILD_ID'
