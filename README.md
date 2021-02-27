@@ -1,4 +1,4 @@
-## Google Cloud Build Deploy to Kuberneted (CI/CD Pipelines)
+## Google Cloud Build Deploy to Kubernetes (CI/CD Pipelines)
 
 ### App High Level Overview
 ![Kubernetes Deployment with Google Build](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/readme-images/Cloud%20Build%20Deployment%20With%20Kubernetes.svg)
