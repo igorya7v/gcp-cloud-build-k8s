@@ -21,11 +21,11 @@ steps:
 #   - 'CLOUDSDK_CONTAINER_CLUSTER=${GKE_CLUSTER}'
 
 substitutions:
-  APP_NAME: simple-spring-boot-app
-  CONTAINER_NAME: simple-spring-boot-container
-  DEPLOYMENT_NAME: simple-spring-boot-deployment
-  ZONE: us-central1-a
-  GKE: simple-spring-boot-k8s-cluster
+  _APP_NAME: simple-spring-boot-app
+  _CONTAINER_NAME: simple-spring-boot-container
+  _DEPLOYMENT_NAME: simple-spring-boot-deployment
+  _ZONE: us-central1-a
+  _GKE_CLUSTER: simple-spring-boot-k8s-cluster
 
 options:
     substitution_option: 'ALLOW_LOOSE'
