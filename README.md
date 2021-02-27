@@ -1,11 +1,16 @@
-# Google Cloud Build Deploy to Kuberneted (CI/CD Pipelines)
+## Google Cloud Build Deploy to Kuberneted (CI/CD Pipelines)
 
 ### App High Level Overview
 Image here
 
 ### CI/CD Overview
 Image here
-  
+
+### Application Structure
+- Application Source Code: [src](https://github.com/igorya7v/gcp-cloud-build-k8s/tree/main/src "src") folder
+- Docker file: [Dockerfile](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/Dockerfile "Dockerfile")
+- CloudBuild Pipeline Configuration: [cloudbuild.yaml](https://github.com/igorya7v/gcp-cloud-build-k8s/blob/main/cloudbuild.yaml "cloudbuild.yaml")
+
 
 # Deploy Pipeline Flowchart (.github/workflows/aws.yml)
 
@@ -66,6 +71,6 @@ kubectl delete service simple-spring-boot-service
 gcloud container clusters delete simple-spring-boot-cluster
 ```
 
-# TODO
+## TODO
 - Speed up CloudBuild Pipeline.
 - Define infrustructure as a code for the Standard Kubernetes Cluster (check if any infrustrucure definition is needed for the Autopilot mode) using tools like Google Cloud Deployment Manager (Templates), Teraform, etc.
