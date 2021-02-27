@@ -11,5 +11,5 @@ steps:
   id: 'build-image-spring-boot-app'
 images:
 - 'gcr.io/$PROJECT_ID/simple-spring-boot:latest'
-- 'gcr.io/$PROJECT_ID/simple-spring-boot:COMMIT_SHA'
-- 'gcr.io/$PROJECT_ID/simple-spring-boot:BUILD_ID'
+- 'gcr.io/$PROJECT_ID/simple-spring-boot:$COMMIT_SHA'
+- 'gcr.io/$PROJECT_ID/simple-spring-boot:$BUILD_ID'
