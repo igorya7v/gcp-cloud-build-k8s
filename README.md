@@ -46,7 +46,7 @@ gcloud container clusters create simple-spring-boot-cluster --num-nodes=1
 gcloud container clusters get-credentials simple-spring-boot-cluster
 ```
 Ensure that you have an `Kubernetes Engine Developer` IAM role in your account. 
-#####  Deploying an application to the cluster
+#####  Deploying an application to the cluster **(Only in case if you want do it manually instead of Cloud Build Pipeline)**
 ```
 kubectl apply -f simple-spring-boot-app.yaml
 ```
